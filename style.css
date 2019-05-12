@@ -105,3 +105,24 @@ img {
 .gnav__link:hover:after {
   opacity: 1;
 }
+
+.footer {
+  padding: 16px;
+  border-top: 1px solid rgba(0, 0, 0, .12);
+  font-size: 12px;
+  color: rgba(0, 0, 0, .6);
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav {
+  display: flex;
+  list-style: none;
+}
+.footer-nav__item + .footer-nav__item:before {
+  content: "|";
+  margin: 0 8px;
+}
+.footer-nav__link {
+  text-decoration: none;
+  color: inherit;
+}
