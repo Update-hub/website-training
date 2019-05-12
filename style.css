@@ -62,3 +62,46 @@ img {
   border-color: #000;
   color: #000;
 }
+
+.header {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 56px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, .8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+.gnav {
+  display: flex;
+  list-style: none;
+}
+.gnav__link {
+  padding: 0 8px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+  position: relative;
+  line-height: 56px;
+  display: block;
+}
+.gnav__link:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  opacity: 0;
+  transition: opacity .3s;
+}
+.gnav__link:hover:after {
+  opacity: 1;
+}
