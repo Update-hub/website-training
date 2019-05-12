@@ -21,3 +21,14 @@ body {
   list-style: none;
   padding: 24px;
 }
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
