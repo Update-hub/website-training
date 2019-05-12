@@ -1,0 +1,21 @@
+body {
+  background: #fafafa;
+}
+.title {
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.lead {
+  margin-bottom: 16px;
+}
+
+.list {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  list-style: none;
+  padding: 24px;
+}
