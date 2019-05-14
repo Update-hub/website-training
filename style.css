@@ -37,19 +37,24 @@ img {
 }
 
 .button {
-  font-size: 16px;
   padding: 0 48px;
-  line-height: 56px;
-  border-radius: 30px;
+  font-size: 14px;
+  line-height: 46px;
+  border-radius: 25px;
   border: 2px solid #fff;
   background: none;
   display: inline-block;
   color: #fff;
+  cursor: pointer;
 }
-
 .button--black {
   border-color: #000;
   color: #000;
+}
+.button--lg {
+  font-size: 16px;
+  line-height: 56px;
+  border-radius: 30px;
 }
 
 .header {
@@ -297,4 +302,51 @@ iframe {
   iframe {
     height: 160px;
   }
+}
+
+.contact {
+  max-width: 560px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 16px;
+}
+@media screen and (max-width: 640px) {
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
+.contact__label {
+  text-align: right;
+  padding-top: 10px;
+}
+@media screen and (max-width: 640px) {
+  .contact__label {
+    text-align: left;
+    padding-top: 0;
+  }
+}
+.contact__footer {
+  grid-column: 2/3;
+  margin-top: 16px;
+}
+@media screen and (max-width: 640px) {
+  .contact__footer {
+    grid-column: 1/2;
+  }
+}
+
+.input {
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, .12);
+  border-radius: 3px;
+  padding: 8px;
+}
+.input--textarea {
+  height: 160px;
+}
+
+.required {
+  color: #de3f3f;
+  margin-left: 3px;
 }

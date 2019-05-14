@@ -33,7 +33,7 @@
   <div class="hero">
     <div class="container">
       <p class="hero__message">はじめてのWebサイト</p>
-      <a href="" class="button">お問い合わせ</a>
+      <a href="" class="button button--lg">お問い合わせ</a>
     </div>
   </div>
   <div class="section">
@@ -136,6 +136,25 @@
     </div>
   </div>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.673665996426!2d139.72707631525822!3d35.6604109801992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b770913970d%3A0xccc3467fcb15b353!2z44Kw44O844Kw44Or5ZCI5ZCM5Lya56S-!5e0!3m2!1sja!2sjp!4v1557743115208!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <div class="section">
+    <div class="container">
+      <h2 class="heading">
+        <span class="heading__main">CONTACT</span>
+        <span class="heading__sub">お問い合わせ</span>
+      </h2>
+      <form class="contact">
+        <label for="name" class="contact__label">名前<span class="required">*</span></label>
+        <input type="text" name="name" id="name" class="input" autocomplete="name" required>
+        <label for="email" class="contact__label">メールアドレス<span class="required">*</span></label>
+        <input type="email" name="email" id="email" class="input" required>
+        <label for="body" class="contact__label">内容<span class="required">*</span></label>
+        <textarea name="body" id="body" class="input input--textarea" required></textarea>
+        <div class="contact__footer">
+          <button type="submit" class="button button--black">送信</button>
+        </div>
+      </form>
+    </div>
+  </div>
   <footer class="footer">
     <ul class="footer-nav">
       <li class="footer-nav__item">
