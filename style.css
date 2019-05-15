@@ -2,6 +2,7 @@
 
 body {
   background: #fafafa;
+  font-family: "Noto Sans JP";
 }
 
 a {
@@ -224,6 +225,13 @@ img {
 }
 .profile__text {
   line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.sns-icon {
+  padding: 8px;
+  font-size: 24px;
+  display: inline-block;
 }
 
 .twitter {
