@@ -1,0 +1,14 @@
+.input {
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, .12);
+  border-radius: 3px;
+  padding: 8px;
+}
+.input--textarea {
+  height: 160px;
+}
+
+.required {
+  color: #de3f3f;
+  margin-left: 3px;
+}
