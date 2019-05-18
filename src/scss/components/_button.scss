@@ -8,13 +8,13 @@
   display: inline-block;
   color: #fff;
   cursor: pointer;
-}
-.button--black {
-  border-color: #000;
-  color: #000;
-}
-.button--lg {
-  font-size: 16px;
-  line-height: 56px;
-  border-radius: 30px;
+  &--black {
+    border-color: #000;
+    color: #000;
+  }
+  &--lg {
+    font-size: 16px;
+    line-height: 56px;
+    border-radius: 30px;
+  }
 }

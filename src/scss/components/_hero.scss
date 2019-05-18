@@ -2,10 +2,10 @@
   background: center/cover url(/hero.jpg);
   padding: 280px 0;
   color: #fff;
-}
-.hero__message {
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 32px;
-  line-height: 1.8;
+  &__message {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    line-height: 1.8;
+  }
 }

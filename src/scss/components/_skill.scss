@@ -4,20 +4,20 @@
   background: linear-gradient(to top right, #000, #2d033a);
   padding: 24px;
   height: 100%;
-}
-.skill__icon {
-  margin-bottom: 32px;
-}
-.skill__icon img {
-  height: 80px;
-}
-.skill__title {
-  font-weight: normal;
-  line-height: 1;
-  margin-bottom: 16px;
-}
-.skill__description {
-  font-size: 13px;
-  color: rgba(255, 255, 255, .6);
-  line-height: 1.8;
+  &__icon {
+    margin-bottom: 32px;
+  }
+  &__icon img {
+    height: 80px;
+  }
+  &__title {
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+  &__description {
+    font-size: 13px;
+    color: rgba(255, 255, 255, .6);
+    line-height: 1.8;
+  }
 }

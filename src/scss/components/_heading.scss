@@ -3,34 +3,32 @@
   text-align: center;
   position: relative;
   padding-bottom: 16px;
-}
-.heading:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
-  width: 80px;
-  height: 4px;
-  background: #000;
-}
-.heading__main {
-  font-size: 32px;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 8px;
-  line-height: 1;
-  letter-spacing: 2px;
-}
-@include sp {
-  .heading__main {
-    font-size: 24px;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #000;
   }
-}
-.heading__sub {
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 1;
-  color: rgba(0, 0, 0, .6);
+  &__main {
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    line-height: 1;
+    letter-spacing: 2px;
+    @include sp {
+      font-size: 24px;
+    }
+  }
+  &__sub {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1;
+    color: rgba(0, 0, 0, .6);
+  }
 }

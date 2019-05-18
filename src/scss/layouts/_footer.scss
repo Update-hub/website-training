@@ -5,28 +5,22 @@
   color: rgba(0, 0, 0, .6);
   display: flex;
   justify-content: space-between;
-}
-@include sp {
-  .footer {
+  @include sp {
     display: block;
   }
 }
 .footer-nav {
   display: flex;
-}
-@include sp {
-  .footer-nav {
+  @include sp {
     display: block;
     line-height: 1.8;
     margin-bottom: 16px;
   }
-}
-.footer-nav__item + .footer-nav__item:before {
-  content: "|";
-  margin: 0 8px;
-}
-@include sp {
-  .footer-nav__item + .footer-nav__item:before {
-    display: none;
+  &__item + &__item:before {
+    content: "|";
+    margin: 0 8px;
+    @include sp {
+      display: none;
+    }
   }
 }
