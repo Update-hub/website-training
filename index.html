@@ -36,12 +36,17 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link href="/assets/style.css" rel="stylesheet" type="text/css">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js" defer></script>
   <script src="/assets/scripts/modernizr-custom.js" defer></script>
 </head>
 <body>
   <header class="header">
-    <p class="header__logo">ポートフォリオ</p>
+    <p class="header__logo">
+      <picture>
+        <source srcset="/assets/images/logo.webp" type="image/webp">
+        <img srcset="/assets/images/logo.png" alt="Portfolio">
+      </picture>
+    </p>
     <ul class="gnav">
       <li class="gnav__item">
         <a href="#profile" class="gnav__link">プロフィール</a>

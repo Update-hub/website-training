@@ -11,6 +11,14 @@
   box-sizing: border-box;
   background: rgba(0, 0, 0, .8);
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  &__logo {
+    display: flex;
+    align-items: center;
+    img {
+      display: block;
+      height: 24px;
+    }
+  }
 }
 
 .gnav {
