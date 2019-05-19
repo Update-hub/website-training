@@ -1,7 +1,13 @@
 .hero {
-  background: center/cover url(/assets/images/hero.jpg);
+  background: center/cover;
   padding: 280px 0;
   color: #fff;
+  .webp & {
+    background-image: url("/assets/images/hero.webp");
+  }
+  .no-webp & {
+    background-image: url("/assets/images/hero.jpg");
+  }
   &__message {
     font-size: 40px;
     font-weight: bold;

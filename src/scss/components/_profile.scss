@@ -10,7 +10,13 @@
     width: 160px;
     height: 160px;
     margin-right: 24px;
-    background: center/cover url(/assets/images/profile.jpg);
+    background: center/cover;
+    .webp & {
+      background-image: url("/assets/images/profile.webp");
+    }
+    .no-webp & {
+      background-image: url("/assets/images/profile.jpg");
+    }
     @include sp {
       margin: 0 auto 16px;
     }
