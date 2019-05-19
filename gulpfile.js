@@ -1,12 +1,15 @@
-const { src, dest, parallel, watch } = require('gulp');
+const { src, dest, parallel, watch, series } = require('gulp');
 const sass = require('gulp-sass');
 const plumber = require('gulp-plumber');
 const sassGlob = require('gulp-sass-glob');
 const csso = require('gulp-csso');
 const sourcemaps = require('gulp-sourcemaps');
+const imagemin = require('gulp-imagemin');
+const webp = require('gulp-webp');
 
 const path = {
-  scss: 'src/scss/**/*.scss'
+  scss: 'src/scss/**/*.scss',
+  image: 'src/images/**',
 }
 
 function css() {
@@ -20,10 +23,20 @@ function css() {
     .pipe(dest('assets'));
 }
 
-function watchFiles() {
-  watch([path.scss], css);
+function image() {
+  return src(path.image)
+    .pipe(imagemin([]))
+    .pipe(dest('assets/images'))
+    .pipe(webp())
+    .pipe(dest('assets/images'));
 }
 
-const build = parallel(watchFiles, css);
+function watchFiles() {
+  watch([path.scss], css);
+  watch([path.image], image);
+}
 
-exports.default = build;
+const build = parallel(css, image);
+
+exports.build = build;
+exports.default = series(build, watchFiles);
