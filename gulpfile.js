@@ -9,7 +9,8 @@ const webp = require('gulp-webp');
 
 const path = {
   scss: 'src/scss/**/*.scss',
-  image: 'src/images/**',
+  image: 'src/images/**/*',
+  static: 'static/**/*',
 }
 
 function css() {
@@ -31,12 +32,18 @@ function image() {
     .pipe(dest('assets/images'));
 }
 
+function static() {
+  return src(path.static)
+    .pipe(dest('assets'))
+}
+
 function watchFiles() {
   watch([path.scss], css);
   watch([path.image], image);
+  watch([path.static], static);
 }
 
-const build = parallel(css, image);
+const build = parallel(css, image, static);
 
 exports.build = build;
 exports.default = series(build, watchFiles);
